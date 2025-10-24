@@ -1,0 +1,104 @@
+/*
+A'Niya Tugard's Portfolio
+
+*/
+
+/*css reset*/
+body, header, nav, main, footer, h1, div, img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: white;
+}
+/*styles for the body and images*/
+body{
+	background-color: #000034;
+	
+}
+images{
+	height:200px;
+	width:350px;
+}
+
+.map{
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+
+}
+@media screen and (min-width: 630px), print{
+	.tablet-desktop{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+	/*Tablet Viewport: Style rule for header*/
+	header{
+		position: static;
+		padding-bottom: 2%;
+	}
+	/*Tablet Viewport: Style rules for nav area*/
+	nav li{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	nav li:last-child{
+		border-right: none;
+	}
+	nav li a{
+		padding: .1em .75em;
+	}
+	/*Tablet Viewport: Style rules for main content are*/
+	main ul{
+		margin: 0 0 4% 10%;
+	}
+}
+@media screen and (min-width: 1015px), print{
+	/*Desktop Viewport: Style rule for header*/
+	header{
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+		/*Desktop Viewport: Style rules for nav area*/
+	nav{
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}	
+	nav ul{
+		text-align: right;
+	}
+	nav li{
+		border: none;
+	}
+
+	nav li a{
+		padding: .5em 1em;
+	}
+	nav li a:hover{
+		color:#000;
+		background-color: #fff;
+	}
+	/*Desktop Viewport: Style rules for main content*/
+	main{
+		clear: left; /* or use clear both*/
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+	
+}
+@media screen and (min-width:1921px){
+	
+}
+/*Media Query for Print*/
+@media print{
+	body{
+		background-color:#fff;
+		color: #000;
+	}
+}
